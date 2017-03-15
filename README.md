@@ -1,4 +1,5 @@
 # Paper size detector
+[![Build Status](https://travis-ci.org/devsli/guess-paper-size.svg?branch=master)](https://travis-ci.org/devsli/guess-paper-size)
 
 Basic paper size detector.
 
@@ -8,17 +9,19 @@ Basic paper size detector.
     
 # Use
 
-    var guess = require('guess-paper-size');
+```javascript
+var guess = require('guess-paper-size');
     
-    var width = 210; // mm
-    var height = 297; // mm
+var width = 210; // mm
+var height = 297; // mm
 
-    try {
-        var paper = guess(width, height);
-        console.log('Detected ' + paper.name + ' paper, ' + paper.orientation);
-    } catch {
-        console.warn('Unknown paper format');
-    }
+try {
+  var paper = guess(width, height);
+  console.log('Detected ' + paper.name + ' paper, ' + paper.orientation);
+} catch {
+  console.warn('Unknown paper format');
+}
+```
 
 # Known paper sizes
 
