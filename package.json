@@ -1,0 +1,19 @@
+{
+    "name": "guess-paper-size",
+    "version": "1.0.0",
+    "description": "Paper size detector",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "keywords": [
+        "a4",
+        "papersize",
+        "iso216"
+    ],
+    "author": "Leonid Suprun <leonid@suprun.pw>",
+    "license": "CC0-1.0",
+    "devDependencies": {
+        "mocha": "^3.2.0"
+    }
+}
