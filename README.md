@@ -1,4 +1,5 @@
 # Paper size detector
+
 [![Build Status](https://travis-ci.org/devsli/guess-paper-size.svg?branch=master)](https://travis-ci.org/devsli/guess-paper-size)
 
 Basic paper size detector.
@@ -22,6 +23,8 @@ try {
   console.warn('Unknown paper format');
 }
 ```
+
+[Test me in your browser using RunKit!](https://runkit.com/npm/guess-paper-size)
 
 # Known paper sizes
 
