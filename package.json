@@ -1,7 +1,11 @@
 {
     "name": "guess-paper-size",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Paper size detector",
+    "repository": {
+        "type" : "git",
+        "url" : "https://github.com/devsli/guess-paper-size.git"
+    },
     "main": "index.js",
     "scripts": {
         "test": "mocha"
