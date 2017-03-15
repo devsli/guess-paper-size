@@ -33,5 +33,6 @@ try {
 
 # Links
 
-* https://en.wikipedia.org/wiki/ISO_216
-* https://en.wikipedia.org/wiki/Paper_size#Loose_sizes
+* [ISO 216 - Wikipedia](https://en.wikipedia.org/wiki/ISO_216)
+* [Paper size - Wikipedia](https://en.wikipedia.org/wiki/Paper_size#Loose_sizes)
+* https://www.npmjs.com/package/paper-size - get paper size by name
