@@ -7,12 +7,13 @@ Basic paper size detector.
 # Install #
 
     npm install guess-paper-size
-    
+
 # Use #
 
 ```javascript
+// import guess from 'guess-paper-size';
 var guess = require('guess-paper-size');
-    
+
 var width = 210; // mm
 var height = 297; // mm
 

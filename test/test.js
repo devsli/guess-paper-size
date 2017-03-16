@@ -86,7 +86,7 @@ describe('guess-paper-size', function() {
     it('should not apply ISO 216 tolerance to US formats', function() {
         assert.equal(
             null,
-            guess(216 + 0.1, 279),
+            guess(216 + 2, 279 - 2),
             'US Letter detected when nothing expected'
         );
     });

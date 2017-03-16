@@ -1,4 +1,10 @@
 var SIZES = [
+
+    /* DIN 476 */
+    { size: "4A0", width: 1682, height: 2378 },
+    { size: "2A0", width: 1189, height: 1682 },
+
+    /* ISO 216 */
     { size: "A0",  width: 841, height: 1189 },
     { size: "A1",  width: 594, height:  841 },
     { size: "A2",  width: 420, height:  594 },
@@ -35,14 +41,30 @@ var SIZES = [
     { size: "C9",  width:  40, height:   57 },
     { size: "C10", width:  28, height:   40 },
 
-    { size: "Letter" , width: 216, height: 279 },
-    { size: "Legal"  , width: 216, height: 356 },
-    { size: "Tabloid", width: 279, height: 432 }
+    { size: "RA0", width: 860, height: 1220 },
+    { size: "RA1", width: 610, height:  860 },
+    { size: "RA2", width: 430, height:  610 },
+    { size: "RA3", width: 305, height:  430 },
+    { size: "RA4", width: 215, height:  305 },
+
+    { size: "SRA0", width: 900, height: 1280 },
+    { size: "SRA1", width: 640, height:  900 },
+    { size: "SRA2", width: 450, height:  640 },
+    { size: "SRA3", width: 320, height:  450 },
+    { size: "SRA4", width: 225, height:  320 },
+
+    { size: "Executive", width: 184.2, height: 266.7 },
+    { size: "Folio",     width: 210,   height: 330 },
+    { size: "Letter",    width: 215.9, height: 279.4 },
+    { size: "Legal",     width: 215.9, height: 355.6 },
+    { size: "Tabloid",   width: 279.4, height: 431.8 }
 ];
 
-function exactMatcher(a, b) {
-    return a == b;
-};
+function getFuzzyMatcher(fuzziness) {
+    return function (a, b) {
+        return Math.abs(a - b) < a * fuzziness;
+    };
+}
 
 function iso216FuzzyMatcher(a, b) {
     var tolerance;
@@ -69,7 +91,7 @@ module.exports = function(width, height) {
     }
 
     var found = SIZES.find(function(paper) {
-        var eq = exactMatcher;
+        var eq = getFuzzyMatcher(0.005);
 
         if (paper.size.match(/[A-C][0-9]+/)) {
             eq = iso216FuzzyMatcher;
