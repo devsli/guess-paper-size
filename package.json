@@ -1,6 +1,6 @@
 {
     "name": "guess-paper-size",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Paper size detector",
     "repository": {
         "type" : "git",

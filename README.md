@@ -18,7 +18,7 @@ var height = 297; // mm
 
 try {
   var paper = guess(width, height);
-  console.log('Detected ' + paper.name + ' paper, ' + paper.orientation);
+  console.log('Detected ' + paper.size + ' paper, ' + paper.layout);
 } catch {
   console.warn('Unknown paper format');
 }
@@ -35,4 +35,4 @@ try {
 
 * [ISO 216 - Wikipedia](https://en.wikipedia.org/wiki/ISO_216)
 * [Paper size - Wikipedia](https://en.wikipedia.org/wiki/Paper_size#Loose_sizes)
-* https://www.npmjs.com/package/paper-size - get paper size by name
+* https://www.npmjs.com/package/paper-size - get paper dimensions by name
