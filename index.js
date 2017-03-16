@@ -79,7 +79,7 @@ module.exports = function(width, height) {
     });
 
     if (found == null) {
-        throw "Not found";
+        return null;
     }
 
     return { size: found.size, layout: layout };
