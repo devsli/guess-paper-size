@@ -43,4 +43,5 @@ When not found, return `null`
 
 * [ISO 216 - Wikipedia](https://en.wikipedia.org/wiki/ISO_216)
 * [Paper size - Wikipedia](https://en.wikipedia.org/wiki/Paper_size#Loose_sizes)
+* [guess-paper-size at npmjs.com](https://www.npmjs.com/package/guess-paper-size)
 * https://www.npmjs.com/package/paper-size - get paper dimensions by name
