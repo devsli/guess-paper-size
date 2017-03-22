@@ -36,6 +36,8 @@ When not found, return `null`
 
 # Known paper sizes #
 
+It's supposed to recognize all page sizes [used by PDFKit](https://github.com/devongovett/pdfkit/blob/v0.8.0/lib/page.coffee#L72):
+
 * International formats: `4A0`; `2A0`; `A0`...`A10`; `B0`...`B10`; `C0`...`C10`; `RA0`...`RA4`; `SRA0`...`SRA4`
 * US formats: Executive, Folio, Letter, Legal, Tabloid
 
